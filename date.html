@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let date = new Date();
+    let myDate = new Date();
+    myDate.setFullYear(1999,4,10);
+
+    let yearAlive = date.getFullYear()-myDate.getFullYear();
+    let monthAlive = yearAlive*12+date.getMonth()-myDate.getMonth();
+    let daysAlive = monthAlive*30+date.getDate()-myDate.getDate();
+    alert("Tôi đã sống được "+yearAlive+" năm");
+    alert("Tôi đã sống được "+monthAlive+" tháng");
+    alert("Tôi đã sống được "+daysAlive+" ngày");
+</script>
+</body>
+</html>

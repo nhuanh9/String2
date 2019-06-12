@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let string = new String("Tôi yêu lập trình Java");
+    let count = 0;
+    for (let i = 0; i < string.length; i++){
+        if (string.charAt(i)==="a"){
+            count++;
+        }
+    }
+    alert("Chuỗi có "+count+" kí tự a");
+    let arr = string.split(" ");
+    alert(arr);
+    alert(arr.length);
+    arr[arr.length-1] = "Type";
+    alert(arr);
+</script>
+</body>
+</html>
